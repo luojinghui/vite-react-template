@@ -9,7 +9,8 @@ before_script:
   - node -v
   - which node
   - npm config set registry http://10.80.84.176:4873/
-  - nvm use 12.18.3 && npm install
+  - nvm use 12.18.3
+  - npm install
   - whoami
 
 stages:
@@ -23,4 +24,5 @@ deploy_dev:
     # 指定当前job的运行环境，$CI_COMMIT_REF_NAME代表当前分支名
     name: dev/$CI_COMMIT_REF_NAME
   script:
-    - nvm use 12.18.3 && npm run build
+    - npm run build
+    - node -v
