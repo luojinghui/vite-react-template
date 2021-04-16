@@ -16,10 +16,10 @@ export default defineConfig({
       ],
     }),
   ],
+  base: "./",
   resolve: {
     alias: {
       image: "/src/source/image",
-      // "@": path.resolve(path.__dirname, "src"),
     },
   },
   css: {
@@ -27,7 +27,6 @@ export default defineConfig({
       less: {
         // 支持内联 JavaScript
         javascriptEnabled: true,
-        // 重写 less 变量，定制样式
         modifyVars: {
           "@primary-color": "green",
         },

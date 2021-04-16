@@ -1,7 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
-// import "antd/lib/style/index.less";
 import './style/index.scss';
 import { App } from './App/index'
 
