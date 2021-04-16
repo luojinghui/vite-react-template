@@ -6,7 +6,6 @@ import {
   Route
 } from "react-router-dom";
 import routes from '../Route/index'
-import './style/index.scss';
 
 export const App = () => {
   return (

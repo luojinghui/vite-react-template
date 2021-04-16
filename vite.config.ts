@@ -7,14 +7,14 @@ import * as path from "path";
 export default defineConfig({
   plugins: [
     reactRefresh(),
-    // vitePluginImp({
-    //   libList: [
-    //     {
-    //       libName: "antd",
-    //       style: (name) => `antd/lib/${name}/style/index.less`,
-    //     },
-    //   ],
-    // }),
+    vitePluginImp({
+      libList: [
+        {
+          libName: "antd",
+          style: (name) => `antd/lib/${name}/style/index.less`,
+        },
+      ],
+    }),
   ],
   resolve: {
     alias: {
@@ -31,6 +31,9 @@ export default defineConfig({
         modifyVars: {
           "@primary-color": "green",
         },
+      },
+      scss: {
+        // additionalData: `@import "./src/style/var";`,
       },
     },
   },

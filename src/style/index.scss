@@ -1,9 +1,12 @@
+@import "./var.scss";
+
 .hello {
   color: cadetblue;
 }
 
 .count {
   padding: 20px;
+  background-color: $bg;
 }
 
 .bg {
